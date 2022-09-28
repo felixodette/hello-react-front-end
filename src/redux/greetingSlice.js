@@ -11,7 +11,6 @@ export const getMessage = createAsyncThunk('greeting/getGreeting', async () => {
       'Content-Type': 'application/json',
     },
   }).then((response) => response.json());
-  console.log(message.greeting);
   return message.greeting;
 });
 
